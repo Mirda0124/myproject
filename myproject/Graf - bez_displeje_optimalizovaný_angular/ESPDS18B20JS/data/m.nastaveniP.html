@@ -1,0 +1,280 @@
+<html>
+  <head>
+           <meta charset="windows-1250" > 
+    <title>
+    </title>
+  </head>
+  <body bgcolor="#cdcdcd" >   
+    <table width="400" height="450" style="float: left;" border="0"  >
+    
+              <tr> 
+        <td width="430" height="20" colspan="50" align="center" valign="top"> <h5>Nastaveni regulace </h5>    <hr>
+          </td>
+      </tr>
+        <td width="270" class="td1" height="35" colspan="3">Diference zapnuti </td> 
+        <td width="60" class="td1" colspan="2"  <A id = 'statDiffOn'></A>&deg;C  </td> 
+        <td width="100"align="right"  >
+          <button   type="button" class="buttonPlusMinus" onclick="Butt_DiffOnUp();">+
+          </button>
+          <button   type="button" class="buttonPlusMinus"  onclick="Butt_DiffOnDw();">-
+          </button> </td>
+                <td width="30" >
+      </td>
+
+
+      </tr>
+      <tr> 
+        <td width="270"class="td1" height="35" colspan="3" >Diference vypnuti </td> 
+        <td width="60"class="td1" colspan="2" <A id = 'statDiffOff'></A>&deg;C   </td> 
+        <td width="100"align="right"  >
+          <button type="button"  class="buttonPlusMinus"  onclick="Butt_DiffOffUp();">+
+          </button>
+          <button type="button"  class="buttonPlusMinus"  onclick="Butt_DiffOffDw();">-
+          </button>           </td>
+      </tr>
+      <tr>
+        <td width="270" class="td1"height="35"  colspan="3" >Max teplota zasobniku OFF </td> 
+        <td width="60" class="td1"  colspan="2" <A id = 'statMaxZasOff'></A>&deg;C  </td> 
+        <td width="100" align="right" >
+          <button type="button" class="buttonPlusMinus" onclick="Butt_MaxZasOffUp();">+
+          </button>
+          <button type="button" class="buttonPlusMinus"   onclick="Butt_MaxZasOffDw();">-
+          </button>        </td>
+      </tr>
+      <tr> 
+        <td width="270" class="td1" height="35" colspan="3" >Max teplota zasobniku ON</td> 
+        <td width="60"class="td1"  colspan="2" <A id = 'statMaxZasOn'></A>&deg;C  </td> 
+        <td width="100" align="right">
+          <button type="button" class="buttonPlusMinus" onclick="Butt_MaxZasOnUp();">+
+          </button>
+          <button type="button"  class="buttonPlusMinus"  onclick="Butt_MaxZasOnDw();">-
+          </button>       </td>
+      </tr>
+      <tr> 
+        <td width="270"class="td1" height="35" colspan="3" >Max teplota kolektoru </td> 
+        <td width="60" class="td1"  colspan="2" <A id = 'statMaxKolektor'></A>&deg;C  </td> 
+        <td width="100" align="right">
+          <button type="button" class="buttonPlusMinus" onclick="Butt_MaxKolektorUp();">+
+          </button>
+          <button type="button" class="buttonPlusMinus"   onclick="Butt_MaxKolektorDw();">-
+          </button>  </td>
+      </tr>
+      <tr>
+        <td width="120" height="20" class="td1" colspan="1" >Vystup 1</td> 
+        <td width="120" height="20" class="td1" align="right"  colspan="5">
+          <button class="buttonOnOFFAuto"  id="CerpOn1"    onclick="Butt_CerpOn1();"  >   <b>ON   </b></button>
+          <button class="buttonOnOFFAuto"  id="CerpOff1"   onclick="Butt_CerpOff1();" >   <b>OFF  </b></button>
+          <button class="buttonOnOFFAuto"  id="CerpAuto1"  onclick="Butt_CerpAuto1();">   <b>AUTO </b></button> 
+        </td>
+      </tr>
+      <tr>
+        <td width="120" height="20" class="td1" colspan="1" >Vystup 2</td> 
+        <td width="140" height="20" class="td1"  align="right"  colspan="5">
+          <button class="buttonOnOFFAuto"  id="CerpOn2"    onclick="Butt_CerpOn2();"  >   <b>ON   </b></button>
+          <button class="buttonOnOFFAuto"  id="CerpOff2"   onclick="Butt_CerpOff2();" >   <b>OFF  </b></button>
+          <button class="buttonOnOFFAuto"  id="CerpAuto2"  onclick="Butt_CerpAuto2();">   <b>AUTO </b></button> 
+        </td>
+      </tr>
+      <tr>
+        <td width="120" height="20" class="td1" colspan="1" >Vystup 3</td> 
+        <td width="140" height="20" class="td1"  align="right"  colspan="5">
+          <button class="buttonOnOFFAuto"  id="CerpOn3"    onclick="Butt_CerpOn3();"  >   <b>ON   </b></button>
+          <button class="buttonOnOFFAuto"  id="CerpOff3"   onclick="Butt_CerpOff3();" >   <b>OFF  </b></button>
+          <button class="buttonOnOFFAuto"  id="CerpAuto3"  onclick="Butt_CerpAuto3();">   <b>AUTO </b></button> 
+        </td>
+      </tr>
+      <tr>
+        <td width="120" height="20" class="td1" colspan="1" >Vystup 4</td> 
+        <td width="140" height="20" class="td1"  align="right"  colspan="5">
+          <button class="buttonOnOFFAuto"  id="CerpOn4"    onclick="Butt_CerpOn4();"  >   <b>ON   </b></button>
+          <button class="buttonOnOFFAuto"  id="CerpOff4"   onclick="Butt_CerpOff4();" >   <b>OFF  </b></button>
+          <button class="buttonOnOFFAuto"  id="CerpAuto4"  onclick="Butt_CerpAuto4();">   <b>AUTO </b></button> 
+        </td>
+      </tr>
+      <tr> 
+        <td width="400"class="td1" height="50" align="center" valign="bottom" colspan="6" bgcolor="#CDCDCD">
+          <button class="button" onclick="dialog3();"><b>Defaultni nastaveni</b> </button>        
+        </td>
+      </tr>
+     </table>  
+       <table width="400" height="450" style="float: bottom;" class="table0"  >       
+      <tr> 
+           <td width="50" height="5" colspan="50" align="center" valign="top"> <h5>Nastaveni teplotnich senzoru</h5> <hr> 
+          </td>
+           
+      </tr>
+      <tr> 
+        <td class="td5" colspan="6" height="50" align="center" valign="middle">
+          <button type="button" class="buttonhledejcidla" onclick="Butt_HledejCidla();">Hledej cidla
+          </button></td>
+      </tr>
+      <tr> 
+        <td class="td5" colspan="5"  height="20" align="center"> 
+          <font size="3">  1. cidlo 
+            <select  class="select" id="Cidlo1" onchange="Butt_Cidlo1();"> 
+              <option selected="selected" value="">Nevybrano
+              </option> 
+              <option value="Solar">Solar
+              </option> 
+              <option value="Zasobnik dole">Zasobnik dole
+              </option> 
+              <option value="Zasobnik nahore">Zasobnik nahore
+              </option> 
+              <option value="Mereni 1">Mereni 1
+              </option> 
+              <option value="Mereni 2">Mereni 2
+              </option> 
+              <option value="Mereni 3">Mereni 3
+              </option>
+            </select>
+          </font>              </td> 
+        <td  width="50"   align="left" > 
+          <IMG SRC="images/cidla0.png" NAME="statcid1" width="20" height="20">              </td>
+      </tr>
+      <tr> 
+        <td class="td5" colspan="5"  height="20" align="center"> 
+          <font size="3">2. cidlo 
+            <select   id="Cidlo2" onchange="Butt_Cidlo2();"> 
+              <option selected="selected" value="">Nevybrano
+              </option> 
+              <option value="Solar">Solar
+              </option> 
+              <option value="Zasobnik dole">Zasobnik dole
+              </option> 
+              <option value="Zasobnik nahore">Zasobnik nahore
+              </option> 
+              <option value="Mereni 1">Mereni 1
+              </option> 
+              <option value="Mereni 2">Mereni 2
+              </option> 
+              <option value="Mereni 3">Mereni 3
+              </option>
+            </select>
+          </font>                </td> 
+        <td class="td5"   align="left"> 
+          <font size="3"> 
+            <IMG SRC="images/cidla0.png" NAME="statcid2" width="20" height="20"></td>
+        </font>
+      </tr>
+      <tr> 
+        <td class="td5"  colspan="5" height="20" align="center"> 
+          <font size="3">3. cidlo 
+            <select  id="Cidlo3"   onchange="Butt_Cidlo3();"> 
+              <option selected="selected" value="">Nevybrano
+              </option> 
+              <option value="Solar">Solar
+              </option> 
+              <option value="Zasobnik dole">Zasobnik dole
+              </option> 
+              <option value="Zasobnik nahore">Zasobnik nahore
+              </option> 
+              <option value="Mereni 1">Mereni 1
+              </option> 
+              <option value="Mereni 2">Mereni 2
+              </option> 
+              <option value="Mereni 3">Mereni 3
+              </option>
+            </select>
+          </font>                 </td> 
+        <td class="td5"    align="left">
+          <font size="3"> 
+            <IMG SRC="images/cidla0.png" NAME="statcid3" width="20" height="20"></A></td>
+        </font>
+      </tr>
+      <tr> 
+        <td class="td5"  colspan="5"  height="20"  align="center"> 
+          <font size="3">4. cidlo 
+            <select id="Cidlo4"  onchange="Butt_Cidlo4();"> 
+              <option selected="selected" value="">Nevybrano
+              </option> 
+              <option value="Solar">Solar
+              </option> 
+              <option value="Zasobnik dole">Zasobnik dole
+              </option> 
+              <option value="Zasobnik nahore">Zasobnik nahore
+              </option> 
+              <option value="Mereni 1">Mereni 1
+              </option> 
+              <option value="Mereni 2">Mereni 2
+              </option> 
+              <option value="Mereni 3">Mereni 3
+              </option>
+            </select>
+          </font>               </td> 
+        <td class="td5"      align="left"> 
+          <font size="3"> 
+            <IMG SRC="images/cidla0.png" NAME="statcid4" width="20" height="20"></td>
+        </font>
+      </tr>
+      <tr> 
+        <td class="td5"  colspan="5" height="20"  align="center"> 
+          <font size="3">5. cidlo 
+            <select   id="Cidlo5" onchange="Butt_Cidlo5();"> 
+              <option selected="selected" value="">Nevybrano
+              </option> 
+              <option value="Solar">Solar
+              </option> 
+              <option value="Zasobnik dole">Zasobnik dole
+              </option> 
+              <option value="Zasobnik nahore">Zasobnik nahore
+              </option> 
+              <option value="Mereni 1">Mereni 1 
+              </option> 
+              <option value="Mereni 2">Mereni 2
+              </option> 
+              <option value="Mereni 3">Mereni 3
+              </option>
+            </select>
+          </font>              </td> 
+        <td class="td5"   align="left"> 
+          <font size="3"> 
+            <IMG SRC="images/cidla0.png" NAME="statcid5" width="20" height="20"></td>
+        </font>
+      </tr>
+      <tr> 
+        <td class="td5"  colspan="5" width='500' height="10"  align="center"> 
+          <font size="3">6. cidlo 
+            <select  id="Cidlo6"  onchange="Butt_Cidlo6();"> 
+              <option selected="selected" value="">Nevybrano
+              </option> 
+              <option value="Solar">Solar
+              </option> 
+              <option value="Zasobnik dole">Zasobnik dole
+              </option> 
+              <option value="Zasobnik nahore">Zasobnik nahore
+              </option> 
+              <option value="Mereni 1">Mereni 1
+              </option> 
+              <option value="Mereni 2">Mereni 2
+              </option> 
+              <option value="Mereni 3">Mereni 3
+              </option>
+            </select>
+          </font>              </td> 
+        <td class="td5"   align="left"> 
+          <font size="3"> 
+            <IMG SRC="images/cidla0.png" NAME="statcid6" width="20" height="20" onload="fce();" >     </td>
+        </font>
+      
+      </tr>
+      <tr> 
+      <form id="form_id" method="post" name="myform"> 
+        <td width="600"class="td1" height="30" align="center" valign="bottom" colspan="6" bgcolor="#CDCDCD"><h3>Nastaveni Wifi</h3><hr></td>
+      </tr>
+      <tr> 
+        <td width="600"class="td1" height="30" align="center" valign="top" colspan="6" bgcolor="#CDCDCD"><input id="WifiJmeno" placeholder='jmeno' > <input id="WifiHeslo" placeholder='heslo'><br>      </td>
+      </tr>
+      <tr> 
+        <td width="600"class="td1" height="30" align="center" valign="top" colspan="6" bgcolor="#CDCDCD">  <button class="button" onclick="Butt_Wifi();">   <b>Nastav Wifi </b></button>  </td>
+      </tr>                                                             
+       </form>  
+    </table>
+
+<div align="center">
+    <h4> Aktualizace   </h4><hr>
+   </div>
+<br/>
+    <button class="buttupdate" onclick="Butt_update_soft();">    <b>Aktualizace software </b></button>
+    <button class="buttupdate" onclick="Butt_update_spiff();">   <b>Aktualizace spiff </b></button>
+  </body> 
+</html>

@@ -1,0 +1,94 @@
+
+.table1  { background:url(images/schm.png) no-repeat;background-position:center bottom }
+
+
+body
+{
+	background-color:#cdcdcd;             
+  font-family:Arial,Helvetica,Sans-Serif;
+  Color:#000000; }
+ td{font-size: 20px; }
+ 
+  .td2{width="700"; height="20" }
+  .td3{width="150"; height="20" ; text-align="left" }
+  .td4 {width="200" height="20" text-align="left" }
+  .td5 {width="50" height="20" text-align="left" }
+ .td1{ height="20"; font-size: 14px; }
+ 
+ .button {
+    background-color: GRAY; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 3px;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+
+
+ .buttonAuto {
+    background-color: GRAY; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 6px;
+    text-decoration: none;
+    font-size: 12px;
+    margin: -1px -1px;
+    cursor: pointer;
+}
+
+.buttonAuto:hover,.buttonOff:hover,.buttonOn:hover{
+    background-color:#2f3138;
+}
+
+                             
+ 
+ .buttonOff {
+    background-color: GRAY; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 12px;
+    margin: -1px -1px;
+    cursor: pointer;
+}
+ .buttonOn {
+    background-color: GRAY; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    text-decoration: none;
+    font-size: 12px;
+    margin: -1px -1px;
+    cursor: pointer;
+} 
+ .button4 {
+    background-color: GRAY; /* Green */
+    border: none;
+    color: white;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 19px;
+    margin: 0px 0px;
+    cursor: pointer;
+} 
+h4{
+padding: 30px 35px;
+margin: -10px -50px;
+text-align:center;
+border-radius: 10px 10px 0 0;
+}
+/* CSS DIALOGU */
+
+
+.tbox {position:absolute; display:none; padding:14px 17px; z-index:900;}
+.tinner {padding:10px; border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;height:50px; width:50px; background:#CDCDCD url(images/loading.gif) no-repeat 50% 50%; border: 5px solid rgba(0, 0, 0, 0.1)}
+.tmask {position:absolute; display:none; top:0px; left:0px; height:100%; width:100%; background:#000; z-index:800}
+.tclose {position:absolute; top:14px; left:0px; width:30px; height:30px; cursor:pointer; background:url(images/close.png) no-repeat}
+/*.tclose:hover {background-position:0 -30px}*/
+
+
+#frameless .tclose {left:424px}    
